@@ -60,7 +60,7 @@
 
       function decodeSequence(mrnaSequence) {
         // First, let us find the start.
-        const startIdx = mrnaSequence.findIndex((_, i) => getProtein(mrnaSequence.slice(i)) === 'M') + 3;
+        const startIdx = mrnaSequence.findIndex((_, i) => getProtein(mrnaSequence.slice(i)) === 'M');
         const sequenceFromStart = mrnaSequence.slice(startIdx);
 
         // let us find the stopcode.
